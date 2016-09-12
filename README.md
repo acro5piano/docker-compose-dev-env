@@ -4,7 +4,7 @@ Development environment built with docker-compose
 
 ## setup
 
-1. Clone this repository
+### Clone this repository
 
 ```
 git clone https://github.com/acro5piano/docker-compose-dev-env.git
@@ -12,11 +12,11 @@ cd docker-compose-dev-env
 docker-compose up
 ```
 
-2. It's done!
+### It's done!
 
 Go to http://localhost:3000/ and you can see PHP works.
 
-3. Useful commands
+### Useful commands
 
 - `docker-compose ps` shows the status of containers
 - `docker exec -it [web|db|elasticsearch|memcached] bash` enter the shell of a container
