@@ -1,7 +1,7 @@
 version: "2"
 services:
   web:
-    build: ./web
+    build: ./docker/web
     ports:
       - "3000:3000"
     links:
