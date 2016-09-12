@@ -1,7 +1,7 @@
-version: '2'
+version: "2"
 services:
   web:
-    image: "php:7.0"
+    build: ./web
     ports:
       - "3000:3000"
     links:
@@ -17,10 +17,11 @@ services:
   db:
     image: "mysql:5.7"
     environment:
-      MYSQL_ROOT_PASSWORD: ROOT_PASSWORD
-      MYSQL_DATABASE: yourgreatapp
-      MYSQL_USER: yourgreatapp
-      MYSQL_PASSWORD: yourgreatapp
+      MYSQL_ROOT_PASSWORD: root
+      # If you want to set mysql user manually, remove these comments:
+      # MYSQL_USER: user
+      # MYSQL_PASSWORD: password
+      MYSQL_DATABASE: app
       MYSQL_HOST: ""
     mem_limit: 1000000000
     ports:
